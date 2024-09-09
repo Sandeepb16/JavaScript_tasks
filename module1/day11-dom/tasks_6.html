@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #san{
+            color: aqua;
+            background-color: beige;
+            margin: 10px;
+
+        }
+    </style>
+</head>
+<body>
+
+    <div id="san">
+        hi this is sandeep
+    </div>
+
+    <div class="es">some content1</div>
+    <div class="es">some content2</div>
+    <div class="es">some content3</div>
+    <div class="es">some content4</div>
+    <div class="es">some content5</div>
+
+    <script>
+
+        // 1,6 
+        var a=document.getElementById("san");
+        a.style.backgroundColor="blue";
+        a.style.color="white";
+        a.style.margin="50px";
+        a.style.
+        console.log(a)
+
+
+        // 2
+        var b=document.getElementsByClassName("es");
+        console.log(b);
+        // 3
+        b[0].innerHTML="sandeep reddy";
+
+        // 4
+        var ne=document.createElement("p")
+        ne.textContent="something u need to know";
+        
+        a.appendChild(ne);
+
+
+      
+        //5 
+        a.remove();
+
+
+                
+
+
+
+        
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
