@@ -4,12 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+    <style>
+        /* *{
+            box-sizing: border-box;
+        } */
+
+       
+    </style>
 </head>
 <body>
     
 
     <script>
+        // nav bar
+        let navbar =document.createElement("div");
+        let nav1=document.createElement("div");
+        let nav2=document.createElement("div");
+        let anch1 =document.createElement("a");
+        let s1=document.createElement("span");
+        let anch2 =document.createElement("a");
+        let anch3 =document.createElement("a");
+        let anch4 =document.createElement("a");
+        let sec1=document.createElement("div");
+      
+
+
+        // body style
+        document.body.style.margin="0px";
+        document.body.style.padding="0px";
+        document.body.style.boxSizing="border-box";
+
+        // navbar styles
+        navbar.style.height="7vh";
+        navbar.style.width="100vw"
+        navbar.style.display="flex";
+        navbar.style.justifyContent="space-between";
+        navbar.style.background="white";
+        navbar.style.boxShadow="0.2px 0.2px 2px 0.5px ";
+        navbar.style.position="fixed";
+       
+        anch1.innerHTML="<b>BR</b>  Arcticture";
+        anch2.innerHTML="Projects";
+        anch3.innerHTML="About";
+        anch4.innerHTML="Contact";
+
+        // nav1 styles
+        nav1.style.height="100%";
+        nav1.style.width="15%";
+        nav1.style.backgroundColor="white";
+        nav1.style.padding="13px";
+        nav1.style.boxSizing="border-box";
+
+
+        nav2.style.height="100%";
+        nav2.style.width="23%";
+        nav2.style.backgroundColor="white";
+        nav2.style.padding="13px";
+        nav2.style.boxSizing="border-box";
+        nav2.style.fontSize="1.2em";
+
+        // anch1 styles
+        anch1.style.fontSize="1.2em";
+        anch2.style.marginRight="12%";
+        anch3.style.marginRight="12%";
+        anch4.style.marginRight="12%";
+        anch1.style.fontFamily="Inconsolata";
+        anch2.style.fontFamily="Inconsolata";
+        anch3.style.fontFamily="Inconsolata";
+        anch4.style.fontFamily="Inconsolata";
+
+        // sec1 styles
+        sec1.style.height="100vh";
+        sec1.style.width="100vw";
+        sec1.style.backgroundImage="url('architect.jpg')";
+        sec1.style.backgroundSize="cover";
+        sec1.style.paddingTop="20px"
+        // sec1.style.marginTop="30px"
+
         
+        anch1.appendChild(s1);
+        nav1.appendChild(anch1);
+        nav2.appendChild(anch2);
+        nav2.appendChild(anch3);
+        nav2.appendChild(anch4);
+        navbar.appendChild(nav1);
+        navbar.appendChild(nav2);
+        document.body.appendChild(navbar);
+        document.body.appendChild(sec1);
+        console.log(navbar);
+        console.log(sec1);
+        
+
+
+
+
+
+
     </script>
 
 

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    <script>
+        let image=document.createElement("img");
+        image.style.height="500px";
+        image.style.width="800px";
+        let b=document.createElement("br");
+
+        let arr=["cricket.jpg","valorant.webp","black-myth.jpeg","foot.webp"]
+
+        let btm=document.createElement("button");
+        btm.innerText="cricket";
+        btm.addEventListener("mouseover", function(){
+            image.src=arr[0];
+        }
+        )
+        let btm1=document.createElement("button");
+        btm1.innerText="Valorant";
+        btm1.addEventListener("mouseover", function(){
+            image.src=arr[1];
+        }
+        )
+        let btm2=document.createElement("button");
+        btm2.innerText="cricket"
+        btm2.addEventListener("mouseover", function(){
+            image.src=arr[2];
+        }
+        )
+        let btm3=document.createElement("button");
+        btm3.innerText="cricket"
+        btm3.addEventListener("mouseover", function(){
+            image.src=arr[3];
+        }
+        )
+
+
+
+
+
+        document.body.appendChild(image);
+        document.body.appendChild(b);
+        document.body.appendChild(btm);
+        document.body.appendChild(btm1);
+        document.body.appendChild(btm2);
+        document.body.appendChild(btm3);
+
+
+    </script>
+
+
+</body>
+</html>

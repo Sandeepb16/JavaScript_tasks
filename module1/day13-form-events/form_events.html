@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        span{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+
+    <form action="">
+        <input type="text" placeholder="enter password">
+        <input type="text" placeholder="re enter password"><br>
+        <span>password does not match</span><br>
+
+
+    
+        <input type="submit" value="submit">
+
+    </form>
+
+    <form action="">
+        <input type="text" placeholder="enter 1st number">
+        <input type="text" placeholder="enter 2st number">
+        <input type="text" placeholder="operator">
+    </form>
+
+    <script>
+
+        /*
+            1) Password Strength Checker:
+            Create an input field where a user types a password, and the script checks if the password is "Strong", "Medium", or "Weak" based on its length.
+            2) password matcher
+        */ 
+
+        let form=document.querySelector("form");
+         form.addEventListener("submit" , function(event){
+            event.preventDefault();
+            if(form[0].value==form[1].value ){
+                console.log("submitted sucessful");
+                if (form[0].length>15){
+                    console.log("Strong");
+                
+                }
+                else if(form[0].length>10){
+                    console.log("Medium");
+                
+                }
+                else{
+                    console.log("Weak");
+                
+                }     
+            }
+            else{
+                span=document.querySelector("span");
+                span.style.display="block";
+            }
+            }
+        )
+        // 3) simple calculator
+
+        
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>tasks</h1>
+
+    <pre>
+        <code>
+            <b>
+            Task 1: Day of the Week Message
+            Scenario: Develop a webpage that displays a special message based on the current day of the week.
+
+            “Start your week strong!” for Monday.
+            “Keep going!” for Tuesday.
+            “Halfway there!” for Wednesday.
+            “Almost the weekend!” for Thursday.
+            “Happy Friday!” for Friday.
+            “Enjoy your weekend!” for Saturday and Sunday
+        </b> 
+
+        let day=prompt("enter day");
+        day1=day.toUpperCase();
+
+        if (day1=="MONDAY"){
+            console.log("Start your week strong!"); 
+        }
+        else if(day1=="TUESDAY"){
+            console.log("Keep going!");     
+        }
+        else if(day1=="WEDNESDAY"){
+            console.log("Halfway there!");     
+        }
+        else if(day1=="THURSDAY"){
+            console.log("Almost the weekend!");     
+        }
+        else if(day1=="FRIDAY"){
+            console.log("Happy Friday!");     
+        }
+        else if(day1=="SATURDAY" || day1=="SUNDAY"){
+            console.log("Enjoy your weekend!");     
+        }
+        else{
+            console.log("please renter correctly");
+            
+        }
+
+
+        // const now=new Date();
+        // b=now.getDay();
+        // console.log(b);
+        
+
+        <b>
+            Task 3 : Traffic Light Simulation
+            Scenario: Simulate a traffic light system.
+
+            “Stop” if the light is red.
+            “Get Ready” if the light is yellow.
+            “Go” if the light is green.
+
+        </b>
+
+        let signal=prompt("what is it R/G/Y?");
+        if (signal=="red"){
+            console.log("Stop");
+        }
+        else if(signal=="yellow"){
+            console.log("get ready");
+        }
+        else if(signal=="green"){
+            console.log("Go");
+        }
+
+
+
+        <b>
+        Task 5 : Discount Calculator
+        Scenario: Calculate the discount based on the total purchase amount.
+
+        “No discount” if the amount is less than $50.
+        “5% discount” if the amount is between $50 and $100.
+        “10% discount” if the amount is between $101 and $200.
+        “15% discount” if the amount is above $200.
+        Task:
+
+        Prompt the user to enter the total purchase amount.
+        Display the discount percentage.
+
+        </b>
+        
+        let amount=+prompt("enter purchase amount");
+
+        if (amount&lt;=50){
+            console.log("No discount");
+        }
+        else if(amount>50 && amount&lt;=100){
+            console.log("5% discount");
+        }
+        else if(amount>100 && amount&lt;=200){
+            console.log("10% discount");
+        }
+        else if (amount>200){
+            console.log("15% discount");   
+        }
+        else{
+            console.log("come again");
+            
+        }
+
+
+        <b>
+        Task 6 : Restaurant Menu
+        Scenario: You are developing a restaurant menu system that provides the price of a dish based on the dish name.
+
+        Task7 :
+        Assume a variable dish holds the name of the dish as a string (e.g.,  "Biriyani", "shawarma", "Fried rice", "veg pula").
+        Print the price.
+        </b>
+
+        let menu=prompt("enter dish");
+
+        switch (menu){
+            case "dosa":
+                console.log("20 rs");
+                break;
+            case "idly":
+                console.log("25 rs");
+                break;
+            case "vada":
+                console.log("30 rs");
+                break;
+            case "egg dosa":
+                console.log("50 rs");
+                break;
+            case "karam dosa":
+                console.log("25 rs");
+                break;
+            case "biriyani":
+                console.log("5 rs");
+                break;
+            case "shawarma":
+                console.log("10 rs");
+                break;
+            case "friday rice":
+                console.log("35 rs");
+                break;
+            case "veg pula":
+                console.log("60 rs");
+                break;
+            default :
+                console.log("not aval");    
+        }
+
+
+
+
+
+        <b>
+        Task 8 : Simple Calculator
+        Scenario: You are developing a simple calculator that performs basic arithmetic operations.
+        </b>
+        
+        let num1=+prompt("enter 1st number");
+        let num2=+prompt("enter 2nd number");
+        let oper=prompt("enter operator");
+
+        switch (oper) {
+            case "+":
+                console.log(num1+num2);
+                break;
+            case "-":
+                console.log(num1-num2);
+                break;
+            case "*":
+                console.log(num1*num2);
+                break;
+            case "/":
+                console.log(num1/num2);
+                break;
+            case "%":
+                console.log(num1%num2);
+                break;
+            case "**":
+                console.log(num1%num2);
+                break;
+        
+            default:
+                console.log("enter valid operator");
+                
+                break;
+        }
+
+
+
+        </code>
+
+
+    </pre>
+    
+    <script>
+        /*
+            Task 1: Day of the Week Message
+            Scenario: Develop a webpage that displays a special message based on the current day of the week.
+
+            “Start your week strong!” for Monday.
+            “Keep going!” for Tuesday.
+            “Halfway there!” for Wednesday.
+            “Almost the weekend!” for Thursday.
+            “Happy Friday!” for Friday.
+            “Enjoy your weekend!” for Saturday and Sunday
+        */ 
+
+        let day=prompt("enter day");
+        day1=day.toUpperCase();
+
+        if (day1=="MONDAY"){
+            console.log("Start your week strong!"); 
+        }
+        else if(day1=="TUESDAY"){
+            console.log("Keep going!");     
+        }
+        else if(day1=="WEDNESDAY"){
+            console.log("Halfway there!");     
+        }
+        else if(day1=="THURSDAY"){
+            console.log("Almost the weekend!");     
+        }
+        else if(day1=="FRIDAY"){
+            console.log("Happy Friday!");     
+        }
+        else if(day1=="SATURDAY" || day1=="SUNDAY"){
+            console.log("Enjoy your weekend!");     
+        }
+        else{
+            console.log("please renter correctly");
+            
+        }
+
+
+        // const now=new Date();
+        // b=now.getDay();
+        // console.log(b);
+        
+
+        /*
+            Task 3 : Traffic Light Simulation
+            Scenario: Simulate a traffic light system.
+
+            “Stop” if the light is red.
+            “Get Ready” if the light is yellow.
+            “Go” if the light is green.
+
+        */ 
+
+        let signal=prompt("what is it R/G/Y?");
+        if (signal=="red"){
+            console.log("Stop");
+        }
+        else if(signal=="yellow"){
+            console.log("get ready");
+        }
+        else if(signal=="green"){
+            console.log("Go");
+        }
+
+
+
+        /*
+        Task 5 : Discount Calculator
+        Scenario: Calculate the discount based on the total purchase amount.
+
+        “No discount” if the amount is less than $50.
+        “5% discount” if the amount is between $50 and $100.
+        “10% discount” if the amount is between $101 and $200.
+        “15% discount” if the amount is above $200.
+        Task:
+
+        Prompt the user to enter the total purchase amount.
+        Display the discount percentage.
+
+        */ 
+        
+        let amount=+prompt("enter purchase amount");
+
+        if (amount<=50){
+            console.log("No discount");
+        }
+        else if(amount>50 && amount<=100){
+            console.log("5% discount");
+        }
+        else if(amount>100 && amount<=200){
+            console.log("10% discount");
+        }
+        else if (amount>200){
+            console.log("15% discount");   
+        }
+       
+
+
+        /*
+        Task 6 : Restaurant Menu
+        Scenario: You are developing a restaurant menu system that provides the price of a dish based on the dish name.
+
+        Task7 :
+        Assume a variable dish holds the name of the dish as a string (e.g.,  "Biriyani", "shawarma", "Fried rice", "veg pula").
+        Print the price.
+        */ 
+ 
+        let menu=prompt("select a dish dosa,idly,vada,egg dosa,karam dosa,biriyani,shawarma,friday rice,veg pula");
+
+        switch (menu){
+            case "dosa":
+                console.log("20 rs");
+                break;
+            case "idly":
+                console.log("25 rs");
+                break;
+            case "vada":
+                console.log("30 rs");
+                break;
+            case "egg dosa":
+                console.log("50 rs");
+                break;
+            case "karam dosa":
+                console.log("25 rs");
+                break;
+            case "biriyani":
+                console.log("5 rs");
+                break;
+            case "shawarma":
+                console.log("10 rs");
+                break;
+            case "friday rice":
+                console.log("35 rs");
+                break;
+            case "veg pula":
+                console.log("60 rs");
+                break;
+            default :
+                console.log("not aval");    
+        }
+        /*
+        Task 8 : Simple Calculator
+        Scenario: You are developing a simple calculator that performs basic arithmetic operations.
+        */ 
+        
+        let num1=+prompt("enter 1st number");
+        let num2=+prompt("enter 2nd number");
+        let oper=prompt("enter operator");
+
+        switch (oper) {
+            case "+":
+                console.log(num1+num2);
+                break;
+            case "-":
+                console.log(num1-num2);
+                break;
+            case "*":
+                console.log(num1*num2);
+                break;
+            case "/":
+                console.log(num1/num2);
+                break;
+            case "%":
+                console.log(num1%num2);
+                break;
+            case "**":
+                console.log(num1%num2);
+                break;
+        
+            default:
+                console.log("enter valid operator");
+                
+                break;
+        }
+
+    </script>
+
+
+</body>
+</html>
