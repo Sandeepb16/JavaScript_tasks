@@ -204,23 +204,32 @@
         //     use nested loop
         console.log("Task 8:Write a JavaScript script that uses nested loops to print a multiplication table for numbers 1 through 5.");
         
-        for(i=1;i<=1;i++){
+        // for(i=1;i<=1;i++){
+        //     console.log(i + "table");
+        //     for(a=1;a<=10;a++){
+        //         console.log( "1"+"*"+a+"="+a*1);
+        //     }
+        //     for(b=1;b<=10;b++){
+        //         console.log( "2"+"*"+b+"="+a*2);
+        //     }
+        //     for(c=1;c<=10;c++){
+        //         console.log( "3"+"*"+c+"="+a*3);
+        //     }
+        //     for(d=1;d<=10;d++){
+        //         console.log( "4"+"*"+d+"="+a*4);
+        //     }
+        //     for(e=1;e<=10;e++){
+        //         console.log( "5"+"*"+e+"="+a*5);
+        //     }
+        // }
+
+        var on=1
+        for(i=1;i<=5;i++){
             console.log(i + "table");
-            for(a=1;a<=10;a++){
-                console.log( "1"+"*"+a+"="+a*1);
-            }
-            for(b=1;b<=10;b++){
-                console.log( "2"+"*"+b+"="+a*2);
-            }
-            for(c=1;c<=10;c++){
-                console.log( "3"+"*"+c+"="+a*3);
-            }
-            for(d=1;d<=10;d++){
-                console.log( "4"+"*"+d+"="+a*4);
-            }
-            for(e=1;e<=10;e++){
-                console.log( "5"+"*"+e+"="+a*5);
-            }
+                for(a=1;a<=10;a++){
+                    console.log( `${on}`+"*"+a+"="+a*on);
+                }
+            on=on+1;
         }
 
 
