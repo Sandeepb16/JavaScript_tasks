@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        // Reverse a string Input : hello output : olleh
+        // Find the even numbers in the array - [ 23,54,67,64.45,95,98].
+        // Iterate an object values & keys using a for of loop.
+        <code>
+            let str="hello";
+            for(i=str.length-1;i>=0;i--){
+            console.log(str[i])
+            }
+
+
+            // Find the even numbers in the array - [ 23,54,67,64.45,95,98].
+
+            let arr=[23,54,67,64,45,95,98];
+            for(i of arr){
+                if(i%2==0){
+                    console.log(i)
+                }
+            }
+
+
+
+                    // Iterate an object values & keys using a for of loop.
+            // var key=object.keys(obj)
+            var person = {
+                     name: "Alice",
+                     age: 25,
+                     city: "New York"
+                    };
+            for(var [key,value] of Object.entries(person)){
+                console.log(`${key}: ${value}`)
+            }
+        </code>
+    </pre>
+    <script>
+            // Reverse a string Input : hello output : olleh
+
+
+        let str="hello";
+        for(i=str.length-1;i>=0;i--){
+            console.log(str[i])
+        }
+
+                // Find the even numbers in the array - [ 23,54,67,64.45,95,98].
+
+                let arr=[23,54,67,64,45,95,98];
+            for(i of arr){
+                if(i%2==0){
+                    console.log(i)
+                }
+            }
+
+
+
+                    // Iterate an object values & keys using a for of loop.
+            // var key=object.keys(obj)
+            var person = {
+                     name: "Alice",
+                     age: 25,
+                     city: "New York"
+                    };
+            for(var [key,value] of Object.entries(person)){
+                console.log(`${key}: ${value}`)
+            }
+    </script>
+    
+</body>
+</html>
